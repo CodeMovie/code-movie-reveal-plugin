@@ -1,5 +1,5 @@
 {
-  "name": "code-movie-reveal-plugin",
+  "name": "@codemovie/code-movie-reveal-plugin",
   "version": "0.0.1",
   "description": "Reveal plugin for code.movie",
   "main": "dist/index.js",
@@ -16,5 +16,13 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeMovie/code-movie-reveal-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CodeMovie/code-movie-reveal-plugin/issues"
+  },
+  "homepage": "https://github.com/CodeMovie/code-movie-reveal-plugin#readme"
 }
