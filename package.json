@@ -1,0 +1,20 @@
+{
+  "name": "code-movie-reveal-plugin",
+  "version": "0.0.1",
+  "description": "Reveal plugin for code.movie",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js && esbuild src/index.js --bundle --minify --format=esm --outfile=dist/index.esm.js"
+  },
+  "author": "peter@peterkroener.de",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.15.15",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
