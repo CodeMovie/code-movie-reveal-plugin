@@ -1,3 +1,5 @@
+import "@codemovie/code-movie-runtime";
+
 // For every non-0-frame, add a fragment directly after the animation element.
 // Fragment events ensure that, when one of the fragments becomes visible, the
 // animation gets moved to the corresponding frame.
@@ -11,7 +13,7 @@ function augmentAnimation(animation) {
 
 // Augment all the animations in a given slide with fragments
 function augmentSlide(slide, deck) {
-  const animations = slide.querySelectorAll("animated-highlight");
+  const animations = slide.querySelectorAll("code-movie-runtime");
   for (const animation of animations) {
     augmentAnimation(animation, deck);
     deck.syncFragments();
@@ -30,7 +32,7 @@ function getAnimationTargetForFragment(fragment, index) {
       index + 1
     );
   }
-  if (fragment.matches("animated-highlight")) {
+  if (fragment.matches("code-movie-runtime")) {
     return [fragment, index];
   }
   return null;

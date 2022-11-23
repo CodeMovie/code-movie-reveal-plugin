@@ -1,8 +1,9 @@
 {
   "name": "@codemovie/code-movie-reveal-plugin",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Reveal plugin for code.movie",
-  "main": "dist/index.js",
+  "main": "dist/index.esm.js",
+  "browser": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
     "lint": "eslint ./src",
@@ -24,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/CodeMovie/code-movie-reveal-plugin/issues"
   },
-  "homepage": "https://github.com/CodeMovie/code-movie-reveal-plugin#readme"
+  "homepage": "https://github.com/CodeMovie/code-movie-reveal-plugin#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@codemovie/code-movie-runtime": "^1.0.3"
+  }
 }
