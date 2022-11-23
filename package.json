@@ -7,7 +7,8 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "lint": "eslint ./src",
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js && esbuild src/index.js --bundle --minify --format=esm --outfile=dist/index.esm.js"
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js && esbuild src/index.js --bundle --minify --format=esm --outfile=dist/index.esm.js",
+    "release": "release-it"
   },
   "author": "peter@peterkroener.de",
   "license": "MIT",
@@ -16,7 +17,8 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "release-it": "^15.5.0"
   },
   "repository": {
     "type": "git",
